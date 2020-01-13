@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>test_after</title>
-    <link href="https://cai-zurun.github.io/2020/01/13/test-after/"/>
-    <id>https://cai-zurun.github.io/2020/01/13/test-after/</id>
-    <published>2020-01-13T10:52:30.000Z</published>
-    <updated>2020-01-13T10:52:30.762Z</updated>
+    <title>test2</title>
+    <link href="https://cai-zurun.github.io/2020/01/13/test2/"/>
+    <id>https://cai-zurun.github.io/2020/01/13/test2/</id>
+    <published>2020-01-13T11:28:59.000Z</published>
+    <updated>2020-01-13T12:15:04.030Z</updated>
     
     <summary type="html">
     
@@ -56,17 +56,46 @@
       
         
         
-          &lt;script&gt;
+          &lt;p&gt;new test&lt;/p&gt;
+&lt;script&gt;
         document.querySelectorAll(&#39;.github-emoji&#39;)
           .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+            if (!el.dataset.src) {
         
       
     
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>test_after</title>
+    <link href="https://cai-zurun.github.io/2020/01/13/test-after/"/>
+    <id>https://cai-zurun.github.io/2020/01/13/test-after/</id>
+    <published>2020-01-13T10:52:30.000Z</published>
+    <updated>2020-01-13T12:25:28.420Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This is a test.&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="test" scheme="https://cai-zurun.github.io/tags/test/"/>
     
   </entry>
   

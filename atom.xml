@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>As_usua1&#39;s blog</title>
   
-  
+  <subtitle>平常心</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-01-13T12:30:28.631Z</updated>
+  <updated>2020-01-13T12:37:00.884Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -15,64 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>taaaest3</title>
-    <link href="https://cai-zurun.github.io/2020/01/13/test3/"/>
-    <id>https://cai-zurun.github.io/2020/01/13/test3/</id>
-    <published>2020-01-13T12:04:20.000Z</published>
-    <updated>2020-01-13T12:30:28.631Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;aa&lt;/p&gt;
-&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return;
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="test" scheme="https://cai-zurun.github.io/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test2</title>
-    <link href="https://cai-zurun.github.io/2020/01/13/test2/"/>
-    <id>https://cai-zurun.github.io/2020/01/13/test2/</id>
-    <published>2020-01-13T11:28:59.000Z</published>
-    <updated>2020-01-13T12:30:39.019Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;new test&lt;/p&gt;
-&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) {
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="test2" scheme="https://cai-zurun.github.io/tags/test2/"/>
-    
-  </entry>
   
   <entry>
     <title>test_after</title>

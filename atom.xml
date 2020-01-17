@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>As_usua1&#39;s blog</title>
   
-  <subtitle>输出.equals(输入)</subtitle>
+  <subtitle>Output.equals(Input)</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>

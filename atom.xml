@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-01-17T15:34:22.836Z</updated>
+  <updated>2020-01-18T14:27:30.796Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/"/>
     <id>https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/</id>
     <published>2020-01-17T15:34:22.000Z</published>
-    <updated>2020-01-17T15:34:22.836Z</updated>
+    <updated>2020-01-18T14:27:30.796Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,24 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;blockquote&gt;
+&lt;p&gt;前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;一、任务&quot;&gt;&lt;a href=&quot;#一、任务&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
+      <category term="Markdown" scheme="https://cai-zurun.github.io/categories/Markdown/"/>
+    
+    
+      <category term="任务型学习" scheme="https://cai-zurun.github.io/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="ctf" scheme="https://cai-zurun.github.io/tags/ctf/"/>
+    
+      <category term="漏洞" scheme="https://cai-zurun.github.io/tags/%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   

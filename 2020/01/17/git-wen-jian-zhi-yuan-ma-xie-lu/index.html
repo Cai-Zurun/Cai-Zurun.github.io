@@ -6,9 +6,13 @@
     <meta charset="utf-8">
     <meta name="keywords" content=".git文件致源码泄露, As_usua1&#39;s blog">
     <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。
+
+一、任务
+
+一道ctf题目。
+二、确定题目考的点谷歌关键词：版本管理工具 github ctf
+由得到的结果猜测，可能考的点是.git文件导致源文件泄露。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -285,7 +289,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/git.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -300,117 +304,43 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        height: calc(100vh - 250px);
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">任务型学习</span>
+                            </a>
+                        
+                            <a href="/tags/ctf/">
+                                <span class="chip bg-color">ctf</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%BC%8F%E6%B4%9E/">
+                                <span class="chip bg-color">漏洞</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -436,7 +366,41 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <blockquote>
+<p>前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。</p>
+</blockquote>
+<h3 id="一、任务"><a href="#一、任务" class="headerlink" title="一、任务"></a>一、任务</h3><hr>
+<p><img src="C:%5CBlog%5Csource%5Cimages%5Cctf_git.PNG" alt="ctf_git"></p>
+<p>一道ctf题目。</p>
+<h3 id="二、确定题目考的点"><a href="#二、确定题目考的点" class="headerlink" title="二、确定题目考的点"></a>二、确定题目考的点</h3><p>谷歌关键词：版本管理工具 github ctf</p>
+<p>由得到的结果猜测，可能考的点是.git文件导致源文件泄露。</p>
+<h3 id="三、对git的粗略学习"><a href="#三、对git的粗略学习" class="headerlink" title="三、对git的粗略学习"></a>三、对git的粗略学习</h3><p>其实经常会用到git，例如在用hexo+github pages搭建博客的时候就用到了git，又如在linux下载一些工具的时候，用到的git clone。</p>
+<p>git：分布式版本控制系统。</p>
+<p>首先，何为版本控制系统？以git的诞生故事来解释，linus在开发linux的时候，有世界广大热心的志愿者的帮助，最开始都是志愿者把源码down下来改了后在发给linus，linus再手工合成。当然linux源码大了后自然很不方便，又由于CVS、SVN（集中式版本控制系统）慢且需联网，又经历了一些事件后，linus用C语言开发了git，此后，源码的每次改动都会有记录，即每个版本都有记录。其实可以类比gitbub的功能。</p>
+<p>何为分布式？分布式即与集中式对立，集中式是有一个中央服务器来存储源码，用户每次修改源码都需要从中央服务器把源码down下来，修改后再提交到中央服务器。而分布式则是每个人电脑里都有完整的版本库。</p>
+<p>对理解git工作原理的重要知识点：工作区和暂存区</p>
+<p>工作区就是电脑里看到的目录。</p>
+<img src="C:\Blog\source\images\工作区.png" alt="工作区" style="zoom:67%;">
+
+<p>暂存区在版本库里，版本库就是隐藏目录.git。一张图明了。stage是暂存区，master是分支，我觉得就是所有文件存储的地方。</p>
+<img src="C:\Blog\source\images\版本库.png" alt="版本库" style="zoom: 80%;">
+
+<p>我们把文件往git版本库添加的时候，分两步：</p>
+<p>1、git add :文件添加到暂存区</p>
+<p>2、git commit :暂存区的所有文件添加到master</p>
+<blockquote>
+<p>关于git的学习推荐廖雪峰老师的教程：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a>   我的上面的内容基本都是从他的教程里提炼出来的。</p>
+</blockquote>
+<h3 id="四、学习-git-文件导致源码泄露"><a href="#四、学习-git-文件导致源码泄露" class="headerlink" title="四、学习.git 文件导致源码泄露"></a>四、学习.git 文件导致源码泄露</h3><p>开发人员在开发时，常常会先把源码提交到远程托管网站（如github），最后再从远程托管网站把源码pull到服务器的web目录下，如果忘记把.git文件删除，就造成此漏洞。利用.git文件恢复处网站的源码，而源码里可能会有数据库的信息。</p>
+<p>利用工具有挺多的：githack  githacker  git_extract</p>
+<p>想了想，其实自己的博客就有.git文件。</p>
+<img src="C:\Blog\source\images\blog_git.PNG" alt="blog_git" style="zoom: 33%;">
+
+<p>本来想用githacker 扫一下，没东西出来，嗯。。哦，上传到github的时候.git文件没有上传上去，我的github博客项目里确实没有.git。自然也就不会扫到.git。想想也是，哪这么容易呢。</p>
+<blockquote>
+<p>关于.git文件导致源码泄露更多：<a href="https://www.jianshu.com/p/edae09535ea3" target="_blank" rel="noopener">https://www.jianshu.com/p/edae09535ea3</a></p>
+</blockquote>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -516,7 +480,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">任务型学习</span>
+                                </a>
+                            
+                                <a href="/tags/ctf/">
+                                    <span class="chip bg-color">ctf</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%BC%8F%E6%B4%9E/">
+                                    <span class="chip bg-color">漏洞</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -688,8 +664,7 @@
                 <a href="/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt=".git文件致源码泄露">
+                        <img src="/source/images/git.png" class="responsive-img" alt=".git文件致源码泄露">
                         
                         <span class="card-title">.git文件致源码泄露</span>
                     </div>
@@ -698,9 +673,13 @@
                     <div class="summary block-with-text">
                         
                             
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。
+
+一、任务
+
+一道ctf题目。
+二、确定题目考的点谷歌关键词：版本管理工具 github ctf
+由得到的结果猜测，可能考的点是.git文件导致源文件泄露。
                         
                     </div>
                     <div class="publish-info">
@@ -709,13 +688,33 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            As_usua1
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">任务型学习</span>
+                    </a>
+                    
+                    <a href="/tags/ctf/">
+                        <span class="chip bg-color">ctf</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%BC%8F%E6%B4%9E/">
+                        <span class="chip bg-color">漏洞</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -842,100 +841,6 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
 </style>
 
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
 
     
 

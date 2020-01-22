@@ -4,12 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test_after, As_usua1&#39;s blog">
-    <meta name="description" content="This is a test
-
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.datase">
+    <meta name="keywords" content="以魔方入门前端, As_usua1&#39;s blog">
+    <meta name="description" content="
+前言：最近在知乎上看到余弦回答的如何学习web安全，强调了数据流、输入输出，通过输入提交“特殊数据”，特殊数据在数据流的每个层处理，如果某个层没处理好，在输出的时候，就会出现相应层的安全问题。深感安全相当于逆向思考，故只有先掌握正向，才能">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>test_after | As_usua1&#39;s blog</title>
+    <title>以魔方入门前端 | As_usua1&#39;s blog</title>
     <link rel="icon" type="image/jpeg" href="/logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -286,12 +283,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test_after</h1>
+                    <h1 class="description center-align post-title">以魔方入门前端</h1>
                 </div>
             </div>
         </div>
@@ -408,8 +405,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/test/">
-                                <span class="chip bg-color">test</span>
+                            <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">任务型学习</span>
+                            </a>
+                        
+                            <a href="/tags/web%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">web前端</span>
                             </a>
                         
                     </div>
@@ -424,7 +425,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-13
+                    2020-01-22
                 </div>
                 
 
@@ -441,7 +442,76 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>This is a test</p>
+                <blockquote>
+<p>前言：最近在知乎上看到余弦回答的如何学习web安全，强调了数据流、输入输出，通过<strong>输入</strong>提交“特殊数据”，特殊数据在<strong>数据流</strong>的每个层处理，如果某个层没处理好，在<strong>输出</strong>的时候，就会出现相应层的安全问题。深感安全相当于逆向思考，故只有先掌握正向，才能更好的理解各种漏洞。本来有点急于求成，想直接学前后端开发一套博客系统，能够借此学习框架等。但考虑了一下，还是得慢慢来，先把前端用一些例子大致的了解了解。</p>
+</blockquote>
+<h3 id="一、任务：图片魔方"><a href="#一、任务：图片魔方" class="headerlink" title="一、任务：图片魔方"></a>一、任务：图片魔方</h3><h3 id="二、魔方模型"><a href="#二、魔方模型" class="headerlink" title="二、魔方模型"></a>二、魔方模型</h3><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Practice<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector">*</span><span class="token punctuation">{</span>                        
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>    //初始所有外边距为<span class="token number">0</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>    //初始所有内边距为<span class="token number">0</span>
+        <span class="token punctuation">}</span>    
+        <span class="token selector"><span class="token class">.container</span></span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">150</span>px auto<span class="token punctuation">;</span>    //正方体居中
+            <span class="token property">perspective</span><span class="token punctuation">:</span> <span class="token number">20000000</span>px<span class="token punctuation">;</span>    //视角远一点
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span></span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">transform-style</span><span class="token punctuation">:</span> preserve-<span class="token number">3</span>d<span class="token punctuation">;</span>    //<span class="token number">3</span>D
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">rotateX</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span> <span class="token function">rotateY</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>//调试用的，方便看
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box-page</span></span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>    //六个面初始化到同一个位置
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.top</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateZ</span><span class="token punctuation">(</span><span class="token number">150</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.bottom</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateZ</span><span class="token punctuation">(</span>-<span class="token number">150</span>px<span class="token punctuation">)</span> <span class="token function">rotateX</span><span class="token punctuation">(</span><span class="token number">180</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.left</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-<span class="token number">150</span>px<span class="token punctuation">)</span> <span class="token function">rotateY</span><span class="token punctuation">(</span><span class="token number">90</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.right</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token number">150</span>px<span class="token punctuation">)</span> <span class="token function">rotateY</span><span class="token punctuation">(</span><span class="token number">90</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.before</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token number">150</span>px<span class="token punctuation">)</span> <span class="token function">rotateX</span><span class="token punctuation">(</span><span class="token number">90</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.after</span></span><span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> yellow<span class="token punctuation">;</span>
+            <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-<span class="token number">150</span>px<span class="token punctuation">)</span> <span class="token function">rotateX</span><span class="token punctuation">(</span><span class="token number">90</span>deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!-- 容器 --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>        //最外层是为了调整正方体的位置，例如居中
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page top<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page bottom<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page before<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box-page after<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -485,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cai-zurun.github.io/2020/01/13/test-after/">https://cai-zurun.github.io/2020/01/13/test-after/</a>
+                    <a href="https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/">https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -523,8 +593,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/test/">
-                                    <span class="chip bg-color">test</span>
+                                <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">任务型学习</span>
+                                </a>
+                            
+                                <a href="/tags/web%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">web前端</span>
                                 </a>
                             
                         </div>
@@ -690,9 +764,61 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/01/22/yi-mo-fang-xue-xi-qian-duan/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="以魔方入门前端">
+                        
+                        <span class="card-title">以魔方入门前端</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+前言：最近在知乎上看到余弦回答的如何学习web安全，强调了数据流、输入输出，通过输入提交“特殊数据”，特殊数据在数据流的每个层处理，如果某个层没处理好，在输出的时候，就会出现相应层的安全问题。深感安全相当于逆向思考，故只有先掌握正向，才能
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            As_usua1
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">任务型学习</span>
+                    </a>
+                    
+                    <a href="/tags/web%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">web前端</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/">
                     <div class="card-image">
@@ -716,9 +842,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -744,56 +870,6 @@
                     
                     <a href="/tags/%E6%BC%8F%E6%B4%9E/">
                         <span class="chip bg-color">漏洞</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/13/test-after/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="test_after">
-                        
-                        <span class="card-title">test_after</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            This is a test
-
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.datase
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            As_usua1
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
                     </a>
                     
                 </div>

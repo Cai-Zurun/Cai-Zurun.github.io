@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-01-22T10:04:13.023Z</updated>
+  <updated>2020-01-22T12:08:29.674Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>以魔方入门前端</title>
+    <link href="https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/"/>
+    <id>https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/</id>
+    <published>2020-01-22T10:08:12.000Z</published>
+    <updated>2020-01-22T12:08:29.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前言：最近在知乎上看到余弦回答的如何学习web安全，强调了数据流、输入输出，通过&lt;strong&gt;输入&lt;/strong&gt;提交“特殊数据”，特殊数据在&lt;strong&gt;数据流&lt;/strong&gt;的每个层处理，如果某个层没处理好，在&lt;strong&gt;输出&lt;/s
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="任务型学习" scheme="https://cai-zurun.github.io/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="web前端" scheme="https://cai-zurun.github.io/tags/web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>.git文件致源码泄露</title>
     <link href="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/"/>
     <id>https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/</id>
     <published>2020-01-17T15:34:22.000Z</published>
-    <updated>2020-01-22T10:04:13.023Z</updated>
+    <updated>2020-01-22T12:09:50.326Z</updated>
     
     <summary type="html">
     
@@ -39,7 +67,7 @@
     </summary>
     
     
-      <category term="Markdown" scheme="https://cai-zurun.github.io/categories/Markdown/"/>
+      <category term="任务型学习" scheme="https://cai-zurun.github.io/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="任务型学习" scheme="https://cai-zurun.github.io/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>

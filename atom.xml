@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-01-22T12:08:29.674Z</updated>
+  <updated>2020-01-23T07:40:12.000Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/"/>
     <id>https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/</id>
     <published>2020-01-22T10:08:12.000Z</published>
-    <updated>2020-01-22T12:08:29.674Z</updated>
+    <updated>2020-01-23T07:40:12.000Z</updated>
     
     <summary type="html">
     
@@ -75,35 +75,6 @@
       <category term="ctf" scheme="https://cai-zurun.github.io/tags/ctf/"/>
     
       <category term="漏洞" scheme="https://cai-zurun.github.io/tags/%E6%BC%8F%E6%B4%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test_after</title>
-    <link href="https://cai-zurun.github.io/2020/01/13/test-after/"/>
-    <id>https://cai-zurun.github.io/2020/01/13/test-after/</id>
-    <published>2020-01-13T10:52:30.000Z</published>
-    <updated>2020-01-19T02:55:33.310Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;This is a test&lt;/p&gt;
-&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="test" scheme="https://cai-zurun.github.io/tags/test/"/>
     
   </entry>
   

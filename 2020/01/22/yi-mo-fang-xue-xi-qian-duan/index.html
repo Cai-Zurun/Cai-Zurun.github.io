@@ -27,8 +27,8 @@
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="As_usua1's blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="As_usua1's blog" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -618,12 +618,12 @@
 <p>我觉得这位网友的解释挺好的：</p>
 <blockquote>
 <p>box-sizing 最主要的用法是规定容器元素的最终尺寸计算方式。</p>
-<p>如果你创造了一个 </p><div> 没有设置 box-sizing 属性为 border-box(不设置的话默认值为 content-box.)，同时你设置 <strong>width:100px; border:10px solid red; padding:10px;</strong> 那么最终 div 容器的实际宽度为：</div><p></p>
+<p>如果你创造了一个 </p><div> 没有设置 box-sizing 属性为 border-box(不设置的话默认值为 content-box.)，同时你设置 <strong>width:100px; border:10px solid red; padding:10px;</strong> 那么最终 div 容器的实际宽度为：<p></p>
 <p>100px(width)+2<em>10px</em>(padding)+2*10px(border)=140px</p>
 <p>所以你会得到一个比你预期（100px）还要更大的容器，结果就是会破坏网页布局。</p>
 <p><strong>注意</strong>：容易 margin 的尺寸不会被计算入最终容器宽度，因为对他的定义为对这个容器的留白，但不属于容器本身。</p>
-<p>如果当我们定义一个容器的 box-sizing 属性为 border-box 时（表达式：<strong>br{box-sizing:border-box}</strong>），那么我们创建一个和上段中相同设置的 </p><div> 容器时，那么他的最终宽度即为 100px, 那么它的内容部分（content）的有效宽度变成了 <strong>100px-2*10px-2*10px =60px;</strong> 所以你会得到一个你预期大小的盒子容器，但是只是被压缩了内容部分尺寸而已，但是对于整体布局而言益处颇多。</div><p></p>
-</blockquote>
+<p>如果当我们定义一个容器的 box-sizing 属性为 border-box 时（表达式：<strong>br{box-sizing:border-box}</strong>），那么我们创建一个和上段中相同设置的 </p><div> 容器时，那么他的最终宽度即为 100px, 那么它的内容部分（content）的有效宽度变成了 <strong>100px-2*10px-2*10px =60px;</strong> 所以你会得到一个你预期大小的盒子容器，但是只是被压缩了内容部分尺寸而已，但是对于整体布局而言益处颇多。<p></p>
+</div></div></blockquote>
 </li>
 </ul>
 <h3 id="四、带动画的魔方"><a href="#四、带动画的魔方" class="headerlink" title="四、带动画的魔方"></a>四、带动画的魔方</h3><p><img src="https://cai-zurun.github.io/2020/01/22/yi-mo-fang-xue-xi-qian-duan/%E5%B8%A6%E5%8A%A8%E7%94%BB%E7%9A%84%E9%AD%94%E6%96%B9.PNG" alt="带动画的魔方"></p>

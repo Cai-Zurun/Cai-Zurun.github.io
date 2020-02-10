@@ -4,20 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content=".git文件致源码泄露, As_usua1&#39;s blog">
+    <meta name="keywords" content="以网站为例学习前端, As_usua1&#39;s blog">
     <meta name="description" content="
-
-
-
-
-前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。
-
-一、任务
-
-
-一道ctf题目。
-二、确定题目考的点谷歌关键词：版本管理工具 github ctf
-由得到的结果猜测，可能考的点是.git文件导致源">
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>.git文件致源码泄露 | As_usua1&#39;s blog</title>
+    <title>以网站为例学习前端 | As_usua1&#39;s blog</title>
     <link rel="icon" type="image/jpeg" href="/logo.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -294,12 +285,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">.git文件致源码泄露</h1>
+                    <h1 class="description center-align post-title">以网站为例学习前端</h1>
                 </div>
             </div>
         </div>
@@ -414,41 +405,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">任务型学习</span>
-                            </a>
-                        
-                            <a href="/tags/ctf/">
-                                <span class="chip bg-color">ctf</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%BC%8F%E6%B4%9E/">
-                                <span class="chip bg-color">漏洞</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                任务型学习
-                            </a>
-                        
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/ctf/" class="post-category">
-                                ctf
-                            </a>
-                        
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/ctf/%E6%BC%8F%E6%B4%9E/" class="post-category">
-                                漏洞
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -457,7 +419,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-17
+                    2020-01-26
                 </div>
                 
 
@@ -474,52 +436,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/git.png" style="zoom:150%;">
-
-
-
-<blockquote>
-<p>前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。</p>
-</blockquote>
-<h3 id="一、任务"><a href="#一、任务" class="headerlink" title="一、任务"></a>一、任务</h3><hr>
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/ctf_git.PNG" alt="ctf_git" style="zoom: 25%;">
-
-<p>一道ctf题目。</p>
-<h3 id="二、确定题目考的点"><a href="#二、确定题目考的点" class="headerlink" title="二、确定题目考的点"></a>二、确定题目考的点</h3><p>谷歌关键词：版本管理工具 github ctf</p>
-<p>由得到的结果猜测，可能考的点是.git文件导致源文件泄露。</p>
-<h3 id="三、对git的粗略学习"><a href="#三、对git的粗略学习" class="headerlink" title="三、对git的粗略学习"></a>三、对git的粗略学习</h3><p>其实经常会用到git，例如在用hexo+github pages搭建博客的时候就用到了git，又如在linux下载一些工具的时候，用到的git clone。</p>
-<p>git：分布式版本控制系统。</p>
-<p>首先，何为版本控制系统？以git的诞生故事来解释，linus在开发linux的时候，有世界广大热心的志愿者的帮助，最开始都是志愿者把源码down下来改了后在发给linus，linus再手工合成。当然linux源码大了后自然很不方便，又由于CVS、SVN（集中式版本控制系统）慢且需联网，又经历了一些事件后，linus用C语言开发了git，此后，源码的每次改动都会有记录，即每个版本都有记录。其实可以类比gitbub的功能。</p>
-<p>何为分布式？分布式即与集中式对立，集中式是有一个中央服务器来存储源码，用户每次修改源码都需要从中央服务器把源码down下来，修改后再提交到中央服务器。而分布式则是每个人电脑里都有完整的版本库。</p>
-<p>对理解git工作原理的重要知识点：工作区和暂存区</p>
-<p>工作区就是电脑里看到的目录。</p>
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/工作区.png" alt="工作区" style="zoom: 50%;">
-
-<p>暂存区在版本库里，版本库就是隐藏目录.git。一张图明了。stage是暂存区，master是分支，我觉得就是所有文件存储的地方。</p>
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/版本库.jpg" alt="版本库" style="zoom:50%;">
-
-<p>我们把文件往git版本库添加的时候，分两步：</p>
-<p>1、git add :文件添加到暂存区</p>
-<p>2、git commit :暂存区的所有文件添加到master</p>
-<blockquote>
-<p>关于git的学习推荐廖雪峰老师的教程：<a href="https://www.liaoxuefeng.com/wiki/896043488029600" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/896043488029600</a>   我的上面的内容基本都是从他的教程里提炼出来的。</p>
-</blockquote>
-<h3 id="四、学习-git-文件导致源码泄露"><a href="#四、学习-git-文件导致源码泄露" class="headerlink" title="四、学习.git 文件导致源码泄露"></a>四、学习.git 文件导致源码泄露</h3><p>开发人员在开发时，常常会先把源码提交到远程托管网站（如github），最后再从远程托管网站把源码pull到服务器的web目录下，如果忘记把.git文件删除，就造成此漏洞。利用.git文件恢复处网站的源码，而源码里可能会有数据库的信息。</p>
-<p>利用工具有挺多的：githack  githacker  git_extract</p>
-<p>想了想，其实自己的博客就有.git文件。</p>
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/blog_git.PNG" alt="blog_git" style="zoom: 25%;">
-
-<p>本来想用githacker 扫一下，没东西出来，嗯。。哦，上传到github的时候.git文件没有上传上去，我的github博客项目里确实没有.git。自然也就不会扫到.git。想想也是，哪这么容易呢。</p>
-<blockquote>
-<p>关于.git文件导致源码泄露更多：<a href="https://www.jianshu.com/p/edae09535ea3" target="_blank" rel="noopener">https://www.jianshu.com/p/edae09535ea3</a></p>
-</blockquote>
-<h3 id="五、CTF题解法"><a href="#五、CTF题解法" class="headerlink" title="五、CTF题解法"></a>五、CTF题解法</h3><p>在用了网上的解法，恢复了网站的源文件，发现flag文件不在。</p>
-<p>没想到flag文件其实是在github仓库的历史commits中。</p>
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/commits.PNG" style="zoom: 25%;">
-
-<img src="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/flag.PNG" style="zoom:25%;">
-
-<script>
+                <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -562,7 +479,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/">https://cai-zurun.github.io/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/</a>
+                    <a href="https://cai-zurun.github.io/2020/01/26/yi-wang-zhan-wei-li-xue-xi-qian-duan/">https://cai-zurun.github.io/2020/01/26/yi-wang-zhan-wei-li-xue-xi-qian-duan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -599,19 +516,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">任务型学习</span>
-                                </a>
-                            
-                                <a href="/tags/ctf/">
-                                    <span class="chip bg-color">ctf</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%BC%8F%E6%B4%9E/">
-                                    <span class="chip bg-color">漏洞</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -779,6 +684,62 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2020/02/11/wang-zhan-jian-yi-da-jian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="网站简易搭建">
+                        
+                        <span class="card-title">网站简易搭建</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+前言：趁着阿里云送的一个月的服务器，把以前的坑给补了。
+
+流程图
+其中的一些过程1、阿里云控制面板开放端口在阿里云的控制面板里可管理开放的端口。此后在安装宝塔时，会提醒我们要开放8888等端口的一个，否则访问不了宝塔。
+
+
+       
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-11
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%AB%99/" class="post-category">
+                                    网站
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">网站</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2020/01/22/yi-mo-fang-xue-xi-qian-duan/">
                     <div class="card-image">
                         
@@ -796,9 +757,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -824,84 +785,6 @@
                     
                     <a href="/tags/web%E5%89%8D%E7%AB%AF/">
                         <span class="chip bg-color">web前端</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/01/17/git-wen-jian-zhi-yuan-ma-xie-lu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt=".git文件致源码泄露">
-                        
-                        <span class="card-title">.git文件致源码泄露</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-
-
-
-
-前言：在一道ctf题的驱动下，我进行了对git和.git文件致源文件泄露的学习。
-
-一、任务
-
-
-一道ctf题目。
-二、确定题目考的点谷歌关键词：版本管理工具 github ctf
-由得到的结果猜测，可能考的点是.git文件导致源
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-17
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    任务型学习
-                                </a>
-                            
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/ctf/" class="post-category">
-                                    ctf
-                                </a>
-                            
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/ctf/%E6%BC%8F%E6%B4%9E/" class="post-category">
-                                    漏洞
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">任务型学习</span>
-                    </a>
-                    
-                    <a href="/tags/ctf/">
-                        <span class="chip bg-color">ctf</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%BC%8F%E6%B4%9E/">
-                        <span class="chip bg-color">漏洞</span>
                     </a>
                     
                 </div>

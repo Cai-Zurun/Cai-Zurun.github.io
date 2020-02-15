@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-02-10T17:23:46.000Z</updated>
+  <updated>2020-02-15T05:09:20.000Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>以留言板入门php</title>
+    <link href="https://cai-zurun.github.io/2020/02/15/yi-liu-yan-ban-ru-men-php/"/>
+    <id>https://cai-zurun.github.io/2020/02/15/yi-liu-yan-ban-ru-men-php/</id>
+    <published>2020-02-15T03:24:37.000Z</published>
+    <updated>2020-02-15T05:09:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1、任务：写一个留言板&quot;&gt;&lt;a href=&quot;#1、任务：写一个留言板&quot; class=&quot;headerlink&quot; title=&quot;1、任务：写一个留言板&quot;&gt;&lt;/a&gt;1、任务：写一个留言板&lt;/h3&gt;&lt;p&gt;能够实现留言并显示。&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="任务型学习" scheme="https://cai-zurun.github.io/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="PHP" scheme="https://cai-zurun.github.io/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/PHP/"/>
+    
+    
+      <category term="任务型学习" scheme="https://cai-zurun.github.io/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="PHP" scheme="https://cai-zurun.github.io/tags/PHP/"/>
+    
+  </entry>
   
   <entry>
     <title>网站简易搭建</title>

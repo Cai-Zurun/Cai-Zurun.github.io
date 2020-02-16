@@ -542,6 +542,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
 <h3 id="3、数据库"><a href="#3、数据库" class="headerlink" title="3、数据库"></a>3、数据库</h3><p>在数据库创建相应的表和字段 </p>
+<p>此处的id值要选择自动递增，否则留言时再插入数据会因为id值重复，而插入失败，最后就只会有一条数据。</p>
 <p><img src="https://images.cnblogs.com/cnblogs_com/As-usua1/1647784/o_200215045829dbs.PNG" alt=""></p>
 <p>连接数据库并new一个PDO对象</p>
 <pre class=" language-php"><code class="language-php"><span class="token delimiter">&lt;?php</span>
@@ -551,7 +552,8 @@
     <span class="token variable">$dbname</span> <span class="token operator">=</span> <span class="token string">'message'</span><span class="token punctuation">;</span>
 
     <span class="token variable">$db</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">PDO</span><span class="token punctuation">(</span><span class="token string">"mysql:host=$host;dbname=$dbname;"</span><span class="token punctuation">,</span><span class="token variable">$user</span><span class="token punctuation">,</span><span class="token variable">$pwd</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
+<span class="token comment" spellcheck="true">//此处dsn部分不能用单引号，因为里面用了变量，单引号是无法识别的，</span>
+<span class="token comment" spellcheck="true">//单引号与双引号的一个区别就是双引号可以识别变量，所以处理速度相较于单引号慢</span>
 
 <span class="token comment" spellcheck="true">//    $db = new mysqli( $host, $user, $pwd, $dbname );</span>
 
@@ -941,62 +943,57 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/02/15/yi-liu-yan-ban-ru-men-php/">
+                <a href="/2020/02/16/xu-ni-ji-macos-an-zhuang-you-hua-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="以留言板入门php">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="虚拟机-macos-安装-优化-问题">
                         
-                        <span class="card-title">以留言板入门php</span>
+                        <span class="card-title">虚拟机-macos-安装-优化-问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1、任务：写一个留言板能够实现留言并显示。
+                            
+前言：由于要学习laravel，了解到在windows下配置麻烦的一批，就萌生了在mac下学习laravel的想法，先弄个虚拟机玩玩吧。
 
-2、HTML+CSS实现留言板大致模样
-&lt;!DOCTYPE html>
-&lt;html lang="en">
-&lt;head>
-    &lt;meta charset="UTF-8"
+1、mac os的安装很好的教程：https://blog.csdn.net/qq_4014786
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-16
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    任务型学习
+                            <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" class="post-category">
+                                    虚拟机
                                 </a>
                             
-                            <a href="/categories/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/PHP/" class="post-category">
-                                    PHP
+                            <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/macos/" class="post-category">
+                                    macos
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BB%BB%E5%8A%A1%E5%9E%8B%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">任务型学习</span>
+                    <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+                        <span class="chip bg-color">虚拟机</span>
                     </a>
                     
-                    <a href="/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/tags/macos/">
+                        <span class="chip bg-color">macos</span>
                     </a>
                     
                 </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cai-zurun.github.io/"/>
-  <updated>2020-02-15T05:09:20.000Z</updated>
+  <updated>2020-02-16T07:21:38.000Z</updated>
   <id>https://cai-zurun.github.io/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>虚拟机-macos-安装-优化-问题</title>
+    <link href="https://cai-zurun.github.io/2020/02/16/xu-ni-ji-macos-an-zhuang-you-hua-wen-ti/"/>
+    <id>https://cai-zurun.github.io/2020/02/16/xu-ni-ji-macos-an-zhuang-you-hua-wen-ti/</id>
+    <published>2020-02-16T06:15:26.000Z</published>
+    <updated>2020-02-16T07:21:38.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前言：由于要学习laravel，了解到在windows下配置麻烦的一批，就萌生了在mac下学习laravel的想法，先弄个虚拟机玩玩吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;1、mac-os的安装&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="虚拟机" scheme="https://cai-zurun.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="macos" scheme="https://cai-zurun.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/macos/"/>
+    
+    
+      <category term="虚拟机" scheme="https://cai-zurun.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="macos" scheme="https://cai-zurun.github.io/tags/macos/"/>
+    
+  </entry>
+  
+  <entry>
     <title>以留言板入门php</title>
     <link href="https://cai-zurun.github.io/2020/02/15/yi-liu-yan-ban-ru-men-php/"/>
     <id>https://cai-zurun.github.io/2020/02/15/yi-liu-yan-ban-ru-men-php/</id>
     <published>2020-02-15T03:24:37.000Z</published>
-    <updated>2020-02-15T05:09:20.000Z</updated>
+    <updated>2020-02-15T05:14:36.000Z</updated>
     
     <summary type="html">
     
